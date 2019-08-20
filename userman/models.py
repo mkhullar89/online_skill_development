@@ -1,3 +1,8 @@
 from django.db import models
+#
+class Basemodel(models.Model):
+    createad_at= models.DateTimeField();
+    updated_at= models.DateTimeField();
 
-# Create your models here.
+    class Meta:
+        abstract=True;
