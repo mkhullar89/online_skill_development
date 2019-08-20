@@ -64,9 +64,10 @@ ROOT_URLCONF = 'online_skill_assesment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),os.path.join(BASE_DIR,'templates','allauth')],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug':False,
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
